@@ -1,0 +1,59 @@
+Nandkumar Khobare
+khobare.1@osu.edu
+The Ohio State University, Columbus
+CSE-6341 Foundations of Programming Languages - Interpreter Part II
+================================================================================================================
+The following files have been submitted as part of this project:
+
+1) Constants.java
+2) SExp.java
+3) TokenHandler.java
+4) Parser.java
+5) LispInterpreter.java
+6) Makefile
+7) READMEP1.txt
+8) designP1.txt
+9) Input.txt
+
+================================================================================================================
+My implementation of the Lisp Interpreter consists of the following classes:
+
+1) LispInterpreter
+2) SExp
+3) Constants
+4) TokenHandler
+6) Parser
+
+================================================================================================================
+In the following, I am describing the main features of each class.
+
+Class LispInterpreter:
+This is the main class for the project. This class contains the main() method which is entry point for application.
+This class is responsible for reading the input and then passing input to the parser for converting it to tree as per the attribute grammar rules.
+The generated tree is then evaluated as per lisp eval[] and associated functions. The final expression value is then printed.
+
+Class SExp:
+This class is the basic DataStructure used to store values parsed from the input. Class idea given in the project description itself.
+It is a tree which gets formed after parsing and is easy to print the output in the end.
+
+Class Constants:
+This class contains all the constant values that have been used in this project.
+Most of the constants are the LISP functions.
+
+Class Parser:
+This class is kind of heart of the interpreter. It traverses tokens given by TokenHandler and produces the tree.
+It has lots of validations for the legality of the atom data. In case of invalid input data, tree is made to collapse and no evaluation of input is taken place.
+No output will be shown but error. It also has method to print the final expression.
+It contains all the eval[] and associated functions of LISP interpreter implementations. All functions definitions will be stored in memory.
+
+Class TokenHandler:
+This class is the extension of StringTokenizer class in Java. Using get and set methods I'm traversing each token in the string input.
+StringTokenizer is legacy class and has been retained for compatibility.
+
+This Lisp interpreter has  been developed by me. Of course, with the help of SExp class and other useful material
+which you had provided, because of which I did not go on wrong track.
+I have gone through various internet sites to find out equivalent functions to C# as I'm not much familiar with Java libraries.
+I have had discussions with my classmates as well as with students who did implement interpreter last semester
+regarding valid and invalid inputs and test cases.
+
+================================================================================================================
